@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web - Carta online</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/bootstrap-4.5.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.5.2-dist/css/bootstrap-grid.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--My styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+    <div class="container-fluid background-mycolor">
+        <!-- Content here -->
+        <div class="row pt-3 pb-3 text-center">
+            <div class="col-sm-12">
+                <img src="assets/img/logo2.png" alt="" class="width-logo">
+            </div>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <div class="menu d-none d-xl-block d-lg-block">
+            <ul class="nav bg-color-uno">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor active-mycolor" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor" href="html/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor" href="html/recetas.html">RECETAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor" href="html/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menu de hamburguesa -->
+        <div class="topnav d-xl-none d-lg-none d-block d-sm-block d-md-block">
+            <a href="#">Menu</a>
+            <!-- Navigation links (hidden in xl y lg) -->
+            <div id="myLinks">
+                <a href="#" class="active-mycolor">HOME</a>
+                <a href="html/nosotros.html">NOSOTROS</a>
+                <a href="html/recetas.html">RECETAS</a>
+                <a href="html/contacto.html">CONTACTO</a>
+            </div>
+            <!-- "icono menu de hamburguesa -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <h1 class="text-center w-100 font-weight-bolder mt-5 mb-5 title-mycolor">BIENVENIDO A NUESTRO SISTEMA DE CARTA ONLINE</h1>
+            <p class="text-center w-100 font-weight-light mt-3 mb-5 ml-5 mr-5">Los alimentos gourmet son aquellas preparaciones que han sido elaborados con ingredientes exquisitamente seleccionados, con exhaustivos cuidados de higiene y de las propiedades organolépticas; además han sido elaborados por personas que, después
+                de muchos años de experiencia y una clara pasión por la alta cocina, están preparados para ofrecer un producto que pueda ser consumido por alguien que realmente aprecie su calidad y delicadeza.</p>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-sm-12">
+                <!-- Carousel -->
+                <div id="carouselExampleInterval" class="carousel slide carousel-mywidth" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <img src="assets/img/01-min.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="assets/img/02-min.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/03-min.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="assets/img/04-min.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/05-min.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex align-content-center flex-wrap cards-mywidth">
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Carne asada</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tagliatelle clásico</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi rolls</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa gourmet</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-05.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salmón caramelizado</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card center-align mb-5 mt-5 mycard-styles">
+                    <img src="assets/img/card-06.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza con tomates secos</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-mywidth btn-mycolor">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="row footer-mycolor p-5 footer-height">
+            <div class="col-12">
+                <h5 class="text-center">Sitio Web Cartas Digitales Online - © 2020 Copyright</h5>
+            </div>
+            <div class="col-12 text-center pt-5">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/pages/category/Cafeteria/Gourmet-Restaurante-909330779160206/" target="_blank" class="btn-floating btn-lg btn-fb border-radius-icons icons-socialmedia-style color-facebook color-socialmedia mr-2" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/casagourmetitaly/?hl=es" target="_blank" class="btn-floating btn-lg btn-ins border-radius-icons icons-socialmedia-style color-instagram color-socialmedia mr-2" type="button" role="button"><i class="fab fa-instagram"></i></a>
+                <!--Pinterest-->
+                <a href="https://ar.pinterest.com/eldiegodemerlo/carta-gourmet/" target="_blank" class="btn-floating btn-lg btn-pin border-radius-icons icons-socialmedia-style color-instagram color-socialmedia mr-2" type="button" role="button"><i class="fab fa-pinterest"></i></a>
+                <!--WhatsApp-->
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="btn-floating btn-lg btn-whatsapp border-radius-icons icons-socialmedia-style color-whatsapp color-socialmedia mr-2" type="button" role="button"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--mis scripts-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

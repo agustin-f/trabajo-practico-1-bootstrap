@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web de Noticias</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../assets/bootstrap-4.5.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.5.2-dist/css/bootstrap-grid.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--mis estilos-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Content here -->
+        <div class="row pt-3 pb-3">
+            <div class="col-sm-12">
+                <h1 class="text-center font-weight-bold"> <span class="text-danger">DIARIO</span> FEDERAL</h1>
+            </div>
+        </div>
+
+        <!-- Menu de navegacion -->
+        <div class="menu 	d-none d-xl-block d-lg-block">
+            <ul class="nav bg-color-uno">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor" href="../index.html">ARGENTINA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor " href="../html/mundo.html">MUNDO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor active-mycolor" href="#">DEPORTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mycolor" href="../html/entretenimiento.html">ENTRETENIMIENTO</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Menu de hamburguesa -->
+        <div class="topnav d-xl-none d-lg-none d-block d-sm-block d-md-block">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden in xl y lg) -->
+            <div id="myLinks">
+                <a href="../index.html">ARGENTINA</a>
+                <a href="../html/mundo.html">MUNDO</a>
+                <a href="#" class="active-mycolor">DEPORTES</a>
+                <a href="../html/entretenimiento.html">ENTRETENIMIENTO</a>
+            </div>
+            <!-- "icono menu de hamburguesa -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <h1 class="text-center w-100 font-weight-bolder mt-5 mb-5 title-mycolor">Este es el titulo de la sección deportes</h1>
+            <img src="../assets/img/sports.jpg" class="img-fluid w-50" alt="Responsive image">
+            <p class="text-center w-50 font-weight-light mt-5 mb-5 ml-5 mr-5">Este es el copete del diario Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus itaque, rem temporibus odio maxime neque corporis adipisci amet dolor accusantium recusandae sit voluptatum magnam quaerat eligendi tempora eveniet
+                aliquid accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, debitis molestias! Voluptas, fugit! Autem non quisquam soluta. Iusto atque ducimus ea. Repudiandae eaque inventore fugit! Id tempore voluptate ut eligendi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum officiis qui explicabo labore odit enim sapiente quam maxime quasi quisquam, error voluptate. Ex qui mollitia nam minima tenetur ut? Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Earum quas, deserunt molestias quis illo ipsum totam corrupti perferendis provident, aspernatur veritatis dolore laborum similique doloremque dignissimos numquam maxime excepturi sapiente?</p>
+        </div>
+
+
+        <div class="row form-mywidth mt-5 mb-5">
+            <!-- Formulario de comentarios -->
+            <form class="form-inside-mywidth">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nombre</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre aqui...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su comentario aqui..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-comments-mycolor w-100">ENVIAR</button>
+            </form>
+        </div>
+
+        <!--Footer-->
+        <div class="row footer-mycolor p-5">
+            <div class="col-12">
+                <h5 class="text-center">Este es el footer de la web - © 2020 Copyright</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--mis scripts-->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
